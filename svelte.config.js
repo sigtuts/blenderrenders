@@ -19,6 +19,7 @@ export default {
     adapter: adapter({
       // if true, will create a Netlify Edge Function rather
       // than using standard Node-based functions
+      env: { dir: "./" },
       edge: false,
 
       // if true, will split your app into multiple functions

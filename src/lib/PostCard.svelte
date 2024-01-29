@@ -1,7 +1,7 @@
 <script>
-  import SanityImage from './SanityImage.svelte'
+  import SanityImage from "./SanityImage.svelte";
 
-  export let post
+  export let post;
 </script>
 
 <article>
@@ -38,7 +38,9 @@
     padding-bottom: 62.5%;
     position: relative;
     overflow: hidden;
-    box-shadow: 2px 2px 15px #111, -2px -2px 15px #111;
+    box-shadow:
+      2px 2px 15px #111,
+      -2px -2px 15px #111;
   }
 
   .image :global(img) {

@@ -18,12 +18,11 @@ export async function load() {
     apiVersion: "2021-10-21",
     useCdn: false,
   });
-  const data = await client.fetch(`*[_type == "post"]`);
+  const data = await client.fetch(`*[_type == "post"]{title}`);
 
   if (data) {
     return {
-      post: data,
-      client: client,
+      title: data,
     };
   }
   return {

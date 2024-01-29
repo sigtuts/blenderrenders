@@ -3,6 +3,8 @@
 </script>
 
 <script>
+  export let datas;
+  console.log(datas);
   export let blogTitle = "Renderz";
   let path;
   $: ({ path } = $page);
@@ -12,7 +14,7 @@
   <h2>{blogTitle}</h2>
   <nav>
     <ul>
-      <li><a data-selected={path === "/"} href="/">home</a></li>
+      <li><a href="/about">about</a></li>
     </ul>
   </nav>
 </header>
@@ -48,6 +50,8 @@
     gap: 4px;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100vw;
+    margin: 0;
+    padding: 0;
     background-color: #202a30;
     height: 5rem;
   }

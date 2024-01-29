@@ -1,7 +1,7 @@
 <script>
-  import PostCard from '$lib/PostCard.svelte'
+  import PostCard from "$lib/PostCard.svelte";
 
-  export let posts = []
+  export let posts = [];
 </script>
 
 <section>
